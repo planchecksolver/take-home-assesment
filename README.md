@@ -39,3 +39,8 @@ Modify the starter project in the repository to implement a user-friendly and cr
 ### 3. Robustness
 - The system should handle errors, network issues, and other temporary problems without breaking the process
 - Ensure the system gracefully reflects the process status, even if some tasks fail
+
+
+## Submission
+- Please submit your solution as a fork of this repository.
+- Include a README.md file with your thoughts and any additional notes.
