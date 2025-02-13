@@ -2,12 +2,22 @@ import random
 import asyncio
 from uuid import uuid4
 
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allow all headers
+)
+
 tasks = {}
+
 
 @app.post("/start-tasks")
 async def start_tasks():
